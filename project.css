@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background: #333;
+    color: white;
+    overflow: hidden;
+}
+
+#navbar {
+    list-style: none;
+    display: none; /* เริ่มต้นซ่อนเมนู */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#navbar li {
+    display: block;
+    padding: 1rem;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar-toggle {
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+@media (min-width: 600px) {
+    #navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    #navbar li {
+        display: inline;
+        padding: 0.5rem 1rem;
+    }
+
+    #navbar-toggle {
+        display: none;
+    }
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #4CAF50;
+    color: white;
+}
